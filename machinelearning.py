@@ -4,6 +4,8 @@ from sklearn.tree import DecisionTreeClassifier,export_graphviz #arvoredeDecisao
 from sklearn.model_selection import train_test_split #divisaoDadosDeTeste
 from sklearn import metrics
 import numpy as np
+#import pydot
+#import graphviz
 
 # Carregando a base de dados:
 data = pd.read_csv('iris.data')
@@ -23,3 +25,14 @@ classifier = DecisionTreeClassifier()
 
 # Treinando o modelo de arvore de decisão:
 classifier = classifier.fit(X_train,y_train)
+
+print(classifier.feature_importances_)
+
+for feature,importancia in zip(data.columns,classifier.feature_importances_):
+    print("{}:{}".format(feature, importancia))
+
+resultado = classifier.predict(X_test)
+print(resultado)
+
+
+print(metrics.classification_report(y_test,resultado))
