@@ -6,5 +6,8 @@ from sklearn import metrics
 import numpy as np
 
 # Carregando a base de dados:
-df_diabetes = pd.read_csv('iris.data')
-df_diabetes.head()
+iris = pd.read_csv('iris.data')
+iris.head()
+
+# Mostrando informações da base de dados
+iris.info()
