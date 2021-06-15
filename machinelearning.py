@@ -6,8 +6,20 @@ from sklearn import metrics
 import numpy as np
 
 # Carregando a base de dados:
-iris = pd.read_csv('iris.data')
-iris.head()
+data = pd.read_csv('iris.data')
+data.head()
 
 # Mostrando informações da base de dados
-iris.info()
+data.info()
+
+# Dividindo os dados em treino e teste:
+X_train, X_test, y_train, y_test = train_test_split(data.drop("type",axis=1),data["type"],test_size=0.3)
+
+print(X_train.shape,X_test.shape)
+print(y_train.shape,y_test.shape)
+
+# Instânciando o objeto classificador:
+classifier = DecisionTreeClassifier()
+
+# Treinando o modelo de arvore de decisão:
+classifier = classifier.fit(X_train,y_train)
