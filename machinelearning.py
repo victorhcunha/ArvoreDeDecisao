@@ -38,18 +38,17 @@ print(classifier.feature_importances_)
 for feature,importancia in zip(data.columns,classifier.feature_importances_):
     print("{}:{}".format(feature, importancia))
 
-# Executando o método predict
+# Executando o método predict:
 resultado = classifier.predict(X_test)
 print(resultado)
 
-# Relatório de métricas
+# Relatório de métricas:
 print(metrics.classification_report(y_test,resultado))
 
-# Renderização de Árvore
-
+# Renderização de Árvore:
 dot_data = export_graphviz( 
          classifier, 
-         out_file="arvore",
+         out_file=None,
          feature_names=data.drop('class',axis=1).columns,
          class_names=['Iris-virginica','Iris-setosa', 'Iris-versicolor'],  
          filled=True, rounded=True,
@@ -61,4 +60,5 @@ dot_data = export_graphviz(
         )
 
 graph = graphviz.Source(dot_data)  
-g = graph(format='png')
+graph
+
