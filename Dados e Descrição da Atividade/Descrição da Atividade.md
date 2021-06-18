@@ -21,17 +21,14 @@ classificação) no conjunto de testes.
 
 - Identificar e explicar, no relatório, quais os parâmetros da árvore de decisão e o que cada um significa.
 
--
-Verificar se, com os parâmetros default da árvore de decisão, a árvore
+- Verificar se, com os parâmetros default da árvore de decisão, a árvore
 gerada fica muito grande. Descrever o tamanho da árvore no relatório.
 
--
-Setar os parâmetros da árvore de forma que sejam obtidas árvores de
+- Setar os parâmetros da árvore de forma que sejam obtidas árvores de
 decisão relativamente pequenas e com boa taxa de acerto de classificação
 no conjunto de testes.
 
 - Como mostrado no exemplo do link acima, vocês devem analisar a importância de cada feature para a classificação.
 
--
-Vocês devem apresentar as figuras da melhor árvore de decisão obtida e
+- Vocês devem apresentar as figuras da melhor árvore de decisão obtida e
 também da pior delas (em termos de taxa de acerto de classificação)
