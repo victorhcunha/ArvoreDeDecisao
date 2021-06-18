@@ -62,3 +62,41 @@ dot_data = export_graphviz(
 graph = graphviz.Source(dot_data)  
 graph
 
+# Renderização de árvore interativa:
+# feature matrix
+X,y = data.drop('class',axis=1),data['class']
+
+# features
+features_label = data.drop('class',axis=1).columns
+
+# clases
+class_label = ['Iris-virginica','Iris-setosa', 'Iris-versicolor']
+
+
+def arvoreinterativa(crit, split, depth, min_samples_split, min_samples_leaf=0.2):
+    estimator = DecisionTreeClassifier(
+           random_state = 0 
+          ,criterion = crit
+          ,splitter = split
+          ,max_depth = depth
+          ,min_samples_split=min_samples_split
+          ,min_samples_leaf=min_samples_leaf
+    )
+    estimator.fit(X, y)
+    graph = Source(export_graphviz(estimator
+      , out_file=None
+      , feature_names=features_label
+      , class_names=class_label
+      , impurity=True
+      , filled = True))
+    display(SVG(graph.pipe(format='svg')))
+    return estimator
+
+inter=interactive(arvoreinterativa 
+   , crit = ["gini", "entropy"]
+   , split = ["best", "random"]
+   , depth=[1,2,3,4,5,10,20,30]
+   , min_samples_split=(1,5)
+   , min_samples_leaf=(1,5))
+
+display(inter)
