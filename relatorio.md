@@ -15,3 +15,7 @@
 - A árvore foi criada com o DecisionTreeClassifier() e treinada com os dados.
 - Foram exibidos os atributos mais importantes e o relatório de métricas.
 - Utilizando a biblioteca graphviz a árvore foi gerada graficamente.
+#####Árvore 
+
+#Ávores
+- A primeira árvore foi gerada sem que nenhum de seus parâmetros fosse especificados.
