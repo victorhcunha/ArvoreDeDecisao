@@ -1,6 +1,6 @@
 # Relatório
 
-### Artefatos Produzidos (disponíveis na pasta (Código Colab)[https://github.com/victorhcunha/ArvoreDeDecisao/tree/main/C%C3%B3digo%20Colab] )
+### Artefatos Produzidos (disponíveis na pasta [Código Colab](https://github.com/victorhcunha/ArvoreDeDecisao/tree/main/C%C3%B3digo%20Colab))
 
 - Árvore de decisão (sem parâmetros especificados)
 - Árvore de decisão interativa (onde seus parâmetros podem ser alterados interativamente)
