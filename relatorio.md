@@ -33,7 +33,7 @@
 ![Árvore1](https://github.com/victorhcunha/ArvoreDeDecisao/blob/main/Imagens/arvore1.png)
 ![Árvore3](https://github.com/victorhcunha/ArvoreDeDecisao/blob/main/Imagens/arvore3.png)
 
-#### Métricas:
+#### Relatório de métricas:
 
 ![Árvore1 - Métricas](https://github.com/victorhcunha/ArvoreDeDecisao/blob/main/Imagens/arvore1Metricas.png)
 ![Árvore3 - Métricas](https://github.com/victorhcunha/ArvoreDeDecisao/blob/main/Imagens/arvore3Metricas.png)
