@@ -31,7 +31,12 @@
 #### Visualmente:
 
 ![Árvore1]
-![Árvore2]
+![Árvore3]
+
+#### Métricas:
+
+![Árvore1 - Métricas]
+![Árvore3 - Métricas]
 
 
 
