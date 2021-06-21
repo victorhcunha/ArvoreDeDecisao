@@ -27,15 +27,11 @@
 - min_samples_leaf: número mínimo de amostras necessárias para estar em um nó folha
 
 ### Comparação Árvore1 (sem parâmetro) vs Árvore3 (com parâmetros)
-               precision    recall  f1-score   support
 
-    Iris-setosa       1.00      1.00      1.00        14
-Iris-versicolor       1.00      0.89      0.94        18
- Iris-virginica       0.87      1.00      0.93        13
+#### Visualmente:
 
-       accuracy                           0.96        45
-      macro avg       0.96      0.96      0.96        45
-   weighted avg       0.96      0.96      0.96        45
+![Árvore1]
+![Árvore2]
 
 
 
