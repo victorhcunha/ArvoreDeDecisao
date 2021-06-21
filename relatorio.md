@@ -26,7 +26,7 @@
 - min_samples_split: número mínimo de amostras necessárias para dividir um nó interno 
 - min_samples_leaf: número mínimo de amostras necessárias para estar em um nó folha
 
-### Comparação Árvore1 (sem parâmetro) vs Árvore3 (com parâmetros)
+### Comparação Árvore1 (sem parâmetro) vs Árvore3 (com parâmetros), respectivamente
 
 #### Visualmente:
 
