@@ -39,4 +39,5 @@
 ![Árvore3 - Métricas](https://github.com/victorhcunha/ArvoreDeDecisao/blob/main/Imagens/arvore3Metricas.png)
 
 
-
+### Conclusão
+A última árvore gerada acabou sendo considerada melhor que a primeira por manter um desempenho satisfatório sem crescer a um nível tão grande de profundidade.
